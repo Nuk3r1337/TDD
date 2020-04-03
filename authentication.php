@@ -33,8 +33,6 @@ public function login($username, $password)
         return "Brugernavn eller kodeord er forkert.";
     }
 
-    // $_SESSION["test"] = true;
-
     $_SESSION["USER_ID"] = $user["id"];
     $_SESSION["USERNAME"] = $user["username"];
     $_SESSION["LOGIN_STATUS"] = true;
